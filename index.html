@@ -5,10 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yum.Me</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+	<link href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#sign-up-container {
+			width: 80%;
+			margin: auto;
+		}
+
+		#mc_embed_signup {
+			false;
+			clear: left;
+			font: 14px Helvetica, Arial, sans-serif;
+			
+			margin: auto;
+		}
+
+		#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+			background-color: inherit;
+		}
+
+		#mc_embed_signup .mc-field-group {
+			width: 100%;
+		}
+
+		#input-group {
+			display: flex;
+    		width: 100%;
+		}
+
+		.email-input {
+			flex: 6;
+		}
+
+		.button-input {
+			flex: 4;
+		}
+
+		#mce-responses {
+			width: 100%;
+		}
+
+		#mc_embed_signup .button {
+			display: inline-flex;
+			font-size: 14px;
+			letter-spacing: 0px;
+			font-weight: 700;
+			line-height: 16px;
+			text-decoration: none !important;
+			text-transform: uppercase;
+			background: #4234F8;
+			color: #fff !important;
+    		transition: background .15s ease;
+			border: none;
+			border-radius: 2px;
+			cursor: pointer;
+			justify-content: center;
+			padding: 16px 40px;
+			height: 100%;
+			text-align: center;
+			white-space: nowrap;
+			margin-left: 5px;
+		}
+
+		#mc_embed_signup .button:hover {
+			background-color: #4234F8;
+		}
+
+		@media (max-width: 632px) {
+			#input-group {
+				flex-direction: column;
+			}
+
+			#mc_embed_signup .button {
+				width: 50%;
+				height: 60%;
+				margin: 10px auto 0px auto;
+			}
+
+			#mc_embed_signup div#mce-responses {
+				margin-top: 25px;
+			}
+
+			#mc_embed_signup .mc-field-group {
+				padding-bottom: unset;
+			}
+
+			.email-input,
+			.button-input {
+				width: 100%;
+				flex: none; /* Remove flex to allow full width */
+			}
+
+			.button-input {
+				margin-top: 10px; /* Adds space between email input and button */
+			}
+		}
+	
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+										 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header text-light">
@@ -36,18 +134,50 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Find Food. Fast.</h1>
 	                        <p class="hero-paragraph">We're working on an app that quickly matches you to the best meal options in your area. </p>
-	                        <div class="hero-cta">
-								<input class="input" type="email" name="email" placeholder="Your best email…" style="line-height: 40px; font-size: 15px; width: 235px; ">
-								<a class="button button-primary button-wide-mobile" href="#">Get early access</a>
+							<div id="sign-up-container" class="hero-cta">							
+							<div id="mc_embed_shell">
+								<div id="mc_embed_signup">
+									<form
+										action="https://goyum.us22.list-manage.com/subscribe/post?u=4fa9fa49dcc54cf46f2ecfd35&amp;id=8332c32584&amp;f_id=0034d6e1f0"
+										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+										target="_blank">
+										<div id="mc_embed_signup_scroll">
+											<div class="mc-field-group">
+												<div id="input-group">
+													<input type="email" name="EMAIL" class="required email email-input" placeholder="Enter your email" id="mce-EMAIL" required="" value="">
+													<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button button-input" value="Get Early Access">
+												</div>
+												<div id="mce-responses" class="clear foot">
+													<div class="response" id="mce-error-response" style="display: none;"></div>
+													<div class="response" id="mce-success-response" style="display: none;"></div>
+												</div>
+											</div>
+											<div aria-hidden="true" style="position: absolute; left: -5000px;">
+												/* real people should not fill this in and expect good things - do not remove this or risk form bot
+												signups */
+												<input type="text" name="b_4fa9fa49dcc54cf46f2ecfd35_8332c32584" tabindex="-1" value="">
+											</div>
+											<div class="optionalParent">
+												<div class="clear foot">
+													
+													<!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iWM_fg"
+															title="Mailchimp - email marketing made easy and fun"><span
+																style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+																	class="refferal_badge"
+																	src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+																	alt="Intuit Mailchimp"
+																	style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+													</p> -->
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+								<script
+									type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 							</div>
-							<!-- <div class="footer-form newsletter-form field field-grouped">
-								<div class="control control-expanded">
-									<input class="input" type="email" name="email" placeholder="Your best email…">
-								</div>
-								<div class="control">
-									<a class="button button-primary button-block button-shadow" href="#">Early access</a>
-								</div>
-							</div> -->
+						</div>
 						</div>
 						<div class="mockup-container">
 							<div class="mockup-bg">
